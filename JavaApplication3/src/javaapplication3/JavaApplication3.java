@@ -21,17 +21,49 @@ public class JavaApplication3 {
         int n3 = n1 + n2;
         int n4 = n3 / (n1-2);    
       
-      
+      -----------------------
         int e1 = 30;
         String nombre = "Agustin Pereyra";
         
         System.out.println("Mi nombre es " + nombre + " y tengo " + e1);  
       
-      
+      -------------------------
       Scanner leer = new Scanner(System.in);
       int numero = leer.nextInt();
-            System.out.println(numero);    */
+            System.out.println(numero);    
       
+     -------------------------------
+    
+     Scanner leer = new Scanner(System.in);
+     System.out.print("true or false? ");
+     boolean logica=leer.nextBoolean();
+      System.out.print("numero random positivo ");
+     float real=leer.nextFloat();
+     System.out.print("Dame ese puto caracter ");
+     char caracter=leer.next().charAt(0);
+     System.out.println("tu letra es la "+ caracter + " tu numero random elegido fue el " + real + " y segun vos todo esto es " + logica); 
+    
+      ------------------------------------     */
+      System.out.print("Ingrese dos numeros ");
+      Scanner leer = new Scanner(System.in);
+      int n3 = 0;
+      int n1 = leer.nextInt();
+      int n2 = leer.nextInt();
+      if (n1>25){
+          n3 = 1;}
+      if (n2>25){
+          n3 = n3 + 1;}
+      if (n3>0){
+          System.out.println("la cantidad de numeros mayores a 25 es de " + n3);}
+      else
+          System.out.println("no tienes numeros mayores a 25" );
+      
+      
+      }
     }
     
-}
+
+
+
+
+
