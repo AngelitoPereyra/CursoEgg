@@ -43,7 +43,7 @@ public class JavaApplication3 {
      char caracter=leer.next().charAt(0);
      System.out.println("tu letra es la "+ caracter + " tu numero random elegido fue el " + real + " y segun vos todo esto es " + logica); 
     
-      ------------------------------------     */
+      ------------------------------------     
       System.out.print("Ingrese dos numeros ");
       Scanner leer = new Scanner(System.in);
       int n3 = 0;
@@ -57,10 +57,33 @@ public class JavaApplication3 {
           System.out.println("la cantidad de numeros mayores a 25 es de " + n3);}
       else
           System.out.println("no tienes numeros mayores a 25" );
+      ----------------------------------------------------------------------- */
       
-      
-      }
+      Scanner leer = new Scanner (System.in);
+        System.out.println("Ingrese cantidad de caracteres");
+        int caract,i,j;
+        
+        caract=leer.nextInt();
+        
+        for (i=1; i <= caract; i++){
+            for (j=1; j <= caract; j++){
+         if ((i>1) && (i<caract) && (j>1) && (j<caract)){
+             System.out.print(" ");
+         }  
+         else{
+             System.out.print("*");
+         }
+                   
+         }
+            System.out.println(" ");
+        }
+        
+       
     }
+}
+
+      
+    
     
 
 
