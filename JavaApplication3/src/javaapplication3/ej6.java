@@ -13,7 +13,7 @@ public class ej6 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.print ("Ingrese un numero");
+        System.out.println("Ingrese un numero: ");
         Scanner leer = new Scanner(System.in);
         int n = leer.nextInt();
         if (n%2==0){

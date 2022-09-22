@@ -57,7 +57,7 @@ public class JavaApplication3 {
           System.out.println("la cantidad de numeros mayores a 25 es de " + n3);}
       else
           System.out.println("no tienes numeros mayores a 25" );
-      ----------------------------------------------------------------------- */
+      ----------------------------------------------------------------------- 
       
       Scanner leer = new Scanner (System.in);
         System.out.println("Ingrese cantidad de caracteres");
@@ -82,11 +82,33 @@ public class JavaApplication3 {
     }
 }
 
+   ----------------------------------------------------------------------------------    
+    
+    Scanner leer=new Scanner(System.in);
+        System.out.println("Ingrese la cantidad de Euros");
+        double euros = leer.nextDouble();
+        System.out.println("Ingrese la moneda a convertir");
+        String moneda = leer.next();
+        cambiar(euros,moneda);
+        
+    }
+    public static void cambiar(double euros, String moneda){
+        switch (moneda){
+            case "libras":
+                System.out.println("en libras es: "+(0.86*euros));
+                break;
+            case "dolar":
+                System.out.println("en dolar es: "+(1.28611*euros));
+                break;
+            case "yenes":
+                System.out.println("en yenes es; "+ (129.852*euros));
+                break;
+        }
+    }
+
+
+----------------------------------------------------------------------------------------- */
+
       
-    
-    
-
-
-
-
-
+    }
+}
