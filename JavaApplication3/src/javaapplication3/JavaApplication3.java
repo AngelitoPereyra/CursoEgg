@@ -107,7 +107,39 @@ public class JavaApplication3 {
     }
 
 
------------------------------------------------------------------------------------------ */
+----------------------------------------------------------------------------------------- 
+        
+        public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingrese un número para saber si es primo");
+        int num = leer.nextInt();
+        
+        System.out.println(numPrimo(num));
+       
+    }
+  public static boolean numPrimo(int num){
+  int cont = 2;
+  boolean primo = true;
+      while(cont<num && primo == true){
+        if (num%cont==0){
+            primo = false;
+        }else{
+        cont = cont+1;
+        }
+    }
+  
+ return primo; 
+  
+  }
+
+        
+        
+        
+        
+        
+        
+        
+        */
 
       
     }
