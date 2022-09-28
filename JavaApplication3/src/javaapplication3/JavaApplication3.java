@@ -132,10 +132,32 @@ public class JavaApplication3 {
   
   }
 
+  -------------------------------------------------------------------------------------------------------      
         
         
         
         
+        public static void main(String[] args) { String vectorA[] = new String[1000];
+       
+
+        for(int i = 0; i < 1000; i++){
+            
+            vectorA[i] = Integer.toString(i).replace("3", "E");
+        }
+
+        for(int i = 0; i < 1000; i++){
+             
+            System.out.println(vectorA[i]); 
+         }
+        // TODO code application logic here
+    }
+    
+}
+
+        
+        
+        
+   --------------------------------------------------------------------------------------------------     
         
         
         
