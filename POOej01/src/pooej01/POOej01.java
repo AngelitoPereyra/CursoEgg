@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pooej01;
+import Entidad.Persona;
+import Servicios.ServicioPersona;
+import java.util.Scanner;
+/**
+ *
+ * @author Agus
+ */
+public class POOej01 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        ServicioPersona sp =new ServicioPersona();
+        Persona Pers=sp.PersonaNueva();
+        
+        System.out.println(Pers.toString());
+    }
+    
+}
