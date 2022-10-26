@@ -29,8 +29,10 @@ public class Ej9Guia7 {
        Scanner leer = new Scanner(System.in);
        ServiciosMatematica Sm = new ServiciosMatematica();
        Matematica numeros = new Matematica();
-       numeros.setNum1((int) (Math.random() * 100));
-       numeros.setNum2((int) (Math.random() * 100));
+       //numeros.setNum1((int) (Math.random() * 100));
+       //numeros.setNum2((int) (Math.random() * 100));
+        numeros.setNum1(50);
+       numeros.setNum2(50);
        boolean flag= true;
        int menu;
        do{
@@ -58,3 +60,4 @@ public class Ej9Guia7 {
     }
     
 }
+1
