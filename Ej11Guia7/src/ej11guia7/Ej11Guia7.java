@@ -10,7 +10,9 @@ Ejemplo fecha actual: Date fechaActual = new Date();
  */
 package ej11guia7;
 
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 
 /**
@@ -23,7 +25,7 @@ public class Ej11Guia7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        Calendar calendario= new GregorianCalendar();
         Scanner leer=new Scanner(System.in);
         System.out.println("Ingrese un dia cualquiera: ");
        int dia=leer.nextInt();
@@ -37,7 +39,6 @@ public class Ej11Guia7 {
        
        System.out.println("Su fecha seleccionada es: "+ fecha.toString());
         System.out.println("Entre la fecha elegida y la actual hay: " + (fechaActual.getYear()-fecha.getYear())+", "+ (fechaActual.getMonth()-fecha.getMonth()) +", "+ (fechaActual.getDate()- fecha.getDate()));
-       
-    }
-    
+        
+    } 
 }

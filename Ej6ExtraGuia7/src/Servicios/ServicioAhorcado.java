@@ -147,3 +147,46 @@ public class ServicioAhorcado {
 
 // Vector[i] = palabra.charAt(i);
 
+/*boolean verificar = false;
+        System.out.println(letraBuscada);
+        for (int i = 0; i < a1.getPalabraBuscada().length; i++) {
+            if (a1.getPalabraBuscada()[i].contains(letraBuscada)) {
+                letra1[i] = letra2[i].replace(letra2[i], letraBuscada);
+                //Arrays.fill(letra1,i, a1.getPalabraBuscada().length, letraBuscada);
+                a1.setLineas(letra1);
+                verificar = true;
+            }
+
+        }
+        if (verificar == true) {
+            System.out.println("Ha acertado!");
+            System.out.println(" ");
+            a1.setLetrasEncontradas(a1.getLetrasEncontradas() + 1);
+        } else {
+            System.out.println("Lo siento. No se encontró la letra");
+            System.out.println(" ");
+            a1.setMaximoDeJugadas(a1.getMaximoDeJugadas() - 1);
+        }
+String letraBuscada = "";
+        for (int i = 0; i < a1.getPalabraBuscada().length; i++) {
+            System.out.print(a1.getLineas()[i]);
+        }
+        System.out.println(" ");
+        boolean flag = true;
+        while (flag) {
+            System.out.println("Ingrese una letra");
+            letraBuscada = leer.next();
+            if (a1.getAbecedario().contains(letraBuscada)) {
+                a1.setAbecedario(a1.getAbecedario().replace(letraBuscada, ""));
+                flag = false;
+            } else {
+                System.out.println("La letra que ingresó ya ha sido ingresada.");
+            }
+
+        }
+
+
+private String abecedario = "a b c d e f g h i j k l m n ñ o p q r s t u v w x y z";
+
+*/
+
