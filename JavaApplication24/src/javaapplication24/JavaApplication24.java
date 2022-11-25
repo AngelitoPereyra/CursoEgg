@@ -242,7 +242,7 @@ public class JavaApplication24 {
     /*   COMPARATOR
     utilizamos la interfaz Comparator con su
     función compare() dentro de nuestra clase entidad. 
-    significa crear una clase dentro de la entidad que se llame comarador (ver entidad)
+    significa crear una clase dentro de la entidad que se llame comparador (ver entidad)
     */
     
     //LISTA

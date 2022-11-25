@@ -49,11 +49,4 @@ public class Objeto {
         return "Objeto{" + "p1=" + p1 + ", n1=" + n1 + '}';
     }
 
-    public static Comparator<Objeto> compararNumeros = new Comparator<Objeto>() {
-        @Override
-        public int compare(Objeto ob1, Objeto ob2) {
-            return ob2.getN1().compareTo(ob1.getN1());
-        }
-
-    };
 }
