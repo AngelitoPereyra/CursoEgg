@@ -23,20 +23,6 @@ public class ServicioPersona {
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
     ServicioPerro Sp = new ServicioPerro();
 
-    public void menuPersona() {
-        int menu;
-        boolean flag = false;
-        do {
-            System.out.println("que desea hacer: ");
-            menu = leer.nextInt();
-            switch (menu) {
-                case 1:
-
-            }
-
-        } while (flag == false);
-    }
-
     public Persona nuevaPersona() {
         Persona nuevaPersona = new Persona();
         System.out.println("Ingrese su nombre: ");

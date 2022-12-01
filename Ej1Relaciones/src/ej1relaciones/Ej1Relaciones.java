@@ -13,7 +13,6 @@ import Entidades.Persona;
 import Servicios.ServicioPerro;
 import Servicios.ServicioPersona;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -30,6 +29,7 @@ public class Ej1Relaciones {
         ServicioPerro sp = new ServicioPerro();
         ServicioPersona ServPer = new ServicioPersona();
         ArrayList<Perro> listaAdoptiva = new ArrayList();
+        ArrayList<Persona> listaDefinitiva = new ArrayList();
         int menu;
         boolean flag = false;
         do {
@@ -50,6 +50,7 @@ public class Ej1Relaciones {
                     Persona p1 = ServPer.nuevaPersona();
                     ServPer.adoptarPerro(p1, listaAdoptiva);
                     System.out.println(p1.toString());
+                    listaDefinitiva.add(p1);
                     break;
                 case 4:
                     flag=true;
