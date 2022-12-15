@@ -19,8 +19,8 @@ luego se llama al método, este no mostrara esa primera carta.
 package ej3relaciones;
 
 import Entidad.Baraja;
-import Entidad.Carta;
-import java.util.ArrayList;
+import Servicios.ServicioBaraja;
+
 
 /**
  *
@@ -32,11 +32,12 @@ public class Ej3Relaciones {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        ServicioBaraja Sb = new ServicioBaraja();
         Baraja nueva = new Baraja();
         nueva.crearBaraja();
+  
+        Sb.menu(nueva);
         
 
         }
     }
-
-

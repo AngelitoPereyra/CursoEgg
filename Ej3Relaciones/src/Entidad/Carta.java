@@ -14,7 +14,16 @@ public class Carta {
     private int numero;
     private String palo;
 
+    public Carta(int numero, String palo) {
+        if (numero >= 8 && numero <= 9) {
+        } else {
+            this.numero = numero;
+            this.palo= palo;
+        }
+    }
+
     public Carta() {
+        
     }
 
     public int getNumero() {
@@ -35,17 +44,7 @@ public class Carta {
 
     @Override
     public String toString() {
-        return "Carta{" + "numero=" + numero + ", palo=" + palo + '}';
+        return "Carta{" + "numero= " + numero + ", palo= " + palo + '}';
     }
 
-    public Carta llenarCarta(int numero, String palo) {
-        Carta c = new Carta();
-        if (numero < 8 || numero > 9) {
-            this.numero = numero;
-            this.palo= palo;
-        }
-
-        return ;
-
-    }
 }
