@@ -6,6 +6,7 @@ package Servicios;
 
 import Entidad.Alquiler;
 import Entidad.Barco;
+import Entidad.Motor;
 import Entidad.Usuario;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -16,8 +17,14 @@ import java.util.Scanner;
  */
 public class ServicioAlquiler {
 
+    ServicioBarco puerto;
+
+    public ServicioAlquiler(ServicioBarco puerto) {
+        this.puerto = puerto;
+    }
+
     Scanner leer = new Scanner(System.in).useDelimiter("\n");
-    ServicioBarco puerto = new ServicioBarco();
+
     Usuario nuevoUsuario = new Usuario();
     Alquiler nuevoAlquiler = new Alquiler();
     ArrayList<Barco> a1 = new ArrayList();
@@ -25,8 +32,8 @@ public class ServicioAlquiler {
     public void menuAlquiler() {
         boolean flag = false;
         int menu = 0;
-        a1=puerto.listaBarcos;
-        do {
+        a1 = puerto.listaBarcos;
+         while (flag == false) {
             System.out.println("Alquilame este bote!!!");
             System.out.println("1- Ver barcos disponibles");
             System.out.println("2- Alquilar un barco");
@@ -40,14 +47,19 @@ public class ServicioAlquiler {
                     nuevoAlquiler.setCliente(nuevoUsuario);
                     System.out.println("Ingrese la posicion del amarre");
                     nuevoAlquiler.setPosicionAmarre(leer.nextInt());
-                    nuevoAlquiler.setBarco(puerto.listaBarcos.get(nuevoAlquiler.getPosicionAmarre()-1));
+                    nuevoAlquiler.setBarco(puerto.listaBarcos.get(nuevoAlquiler.getPosicionAmarre() - 1));
                     cierreDeContrato();
+                    System.out.println(nuevoAlquiler.getBarco().PrecioFinal());
                     flag = true;
                 }
                 case 3 ->
                     flag = true;
             }
-        } while (flag == false);
+            
+            a1.add(Motor.nuevaFuncion());
+            
+        }
+         
     }
 
     public void cierreDeContrato() {
@@ -56,8 +68,8 @@ public class ServicioAlquiler {
     }
 
     public void MostrarBarcos() {
-        for (Barco barco : a1) {
-           
+        for (Barco barco : puerto.listaBarcos) {
+
             System.out.println(barco.toString());
         }
     }

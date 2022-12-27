@@ -51,9 +51,9 @@ public class ServicioBarco {
                     break;
                 case 4:
                     for (Barco listaBarco : listaBarcos) {
-                        System.out.println(listaBarco);
-                        break;
+                        System.out.println(listaBarco);   
                     }
+                    break;
                 case 5:
                     flag = true;
                     break;
@@ -65,5 +65,14 @@ public class ServicioBarco {
     public ArrayList <Barco> mostrarBarcos() {
         
         return listaBarcos;
+    }
+    
+    public void prueba(){
+        for (Barco listaBarco : listaBarcos) {
+            if (listaBarco instanceof Velero){
+            
+        }
+            
+        }
     }
 }

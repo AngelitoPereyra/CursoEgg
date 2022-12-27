@@ -17,8 +17,9 @@ public class Alquiler {
     protected int posicionAmarre;
 
     public Alquiler() {
-        
     }
+
+   
 
     public Alquiler(Usuario cliente, Barco barco, int posicionAmarre) {
         this.cliente = cliente;

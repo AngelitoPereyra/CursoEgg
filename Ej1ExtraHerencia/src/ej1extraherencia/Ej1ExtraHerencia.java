@@ -38,20 +38,22 @@ public class Ej1ExtraHerencia {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         ServicioBarco Sb = new ServicioBarco();
-        ServicioAlquiler Sa= new ServicioAlquiler();
+        ServicioAlquiler Trak= new ServicioAlquiler(Sb);
        
         boolean flag = false;
         int menu;
-        do{
+        while(flag==false){
             System.out.println("Bienvenido al puerto ");
             System.out.println("1- Ingresar barco al muelle");
             System.out.println("2- Alquilar un barco");
+            System.out.println("3- Salir");
             menu = leer.nextInt();
             switch(menu){
                 case 1->Sb.menuBarco();
-                case 2->Sa.menuAlquiler();
+                case 2->{Trak.menuAlquiler(); flag= true;}
+                case 3-> flag=true;
             }
-        }while(flag==false);
+        }
     }
     
 }

@@ -45,7 +45,10 @@ public class Motor extends Barco{
         return super.toString()+ "Motor{" + "cv=" + cv + '}';
     }
 
-  
+  public static Barco nuevaFuncion(){
+      Barco n1 = new Motor();
+      return n1;
+  }
 
     
     
